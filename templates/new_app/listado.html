@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3 class="text-primary">{{ otro_valor }}</h3>
+    <li>
+        {% for elemento in lista %}
+            <ul>Número# {{ elemento }}</ul>
+        {% endfor %}
+    </li>
+{% endblock %}
